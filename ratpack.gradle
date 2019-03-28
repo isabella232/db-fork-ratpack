@@ -51,8 +51,9 @@ ext {
   isAppveyor = System.getenv("APPVEYOR") != null
   isHeroku = System.getenv("HEROKU") != null
   isSemaphore = System.getenv("SEMAPHORE") != null
+  isJenkins = System.getenv("JENKINS_HOME") != null
   isCloudCi = isTravis || isDrone || isCodeship || isSnapCi || isAppveyor || isSemaphore
-  isCi = isCloudCi
+  isCi = isCloudCi || isJenkins
 
   publishedModules = [
     "ratpack-base",
