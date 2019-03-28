@@ -108,6 +108,12 @@ jacoco {
   toolVersion = "0.8.2"
 }
 
+test {
+  jacoco {
+    append = false
+  }
+}
+
 task codeQuality {
   dependsOn tasks.withType(CodeNarc), tasks.withType(Checkstyle)
 }
