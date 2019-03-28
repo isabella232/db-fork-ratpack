@@ -64,3 +64,5 @@ def setBuildFile(project) {
 }
 
 setBuildFile(rootProject)
+
+apply from: "gradle/buildCache.gradle"
