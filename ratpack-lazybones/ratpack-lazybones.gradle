@@ -94,8 +94,8 @@ task writeTestConfig(type: WriteTestConfig) {
 }
 
 task prepareTestResources {
-  dependsOn { apiModules*.install }
-  dependsOn ":ratpack-gradle:install", replaceTemplateTokens, writeTestConfig
+  //dependsOn { apiModules*.install }
+  dependsOn replaceTemplateTokens, writeTestConfig
 }
 
 sourceSets.test.resources.srcDir generatedTestResourcesDir

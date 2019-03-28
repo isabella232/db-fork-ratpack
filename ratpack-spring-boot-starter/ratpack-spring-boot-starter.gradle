@@ -47,8 +47,8 @@ artifacts {
   archives file("${project.name}.gradle")
 }
 
-modifyPom {
+/*modifyPom {
   project {
     packaging "pom"
   }
-}
+}*/

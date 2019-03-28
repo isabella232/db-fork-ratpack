@@ -91,11 +91,11 @@ idea {
   }
 }
 
-modifyPom { pom ->
+/*modifyPom { pom ->
   project {
     name "Ratpack Manual"
   }
-}
+}*/
 
 apiModules.each { evaluationDependsOn(it.path) }
 evaluationDependsOn ":ratpack-gradle"

@@ -173,7 +173,7 @@ apply from: "gradle/dependencies.gradle"
 subprojects {
   apply from: "$rootDir/gradle/ratpackLocal.gradle"
   if (project in publishedModules) {
-    apply from: "$rootDir/gradle/publish.gradle"
+    // apply from: "$rootDir/gradle/publish.gradle"
   }
 }
 
