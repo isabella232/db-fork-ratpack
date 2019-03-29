@@ -16,3 +16,4 @@
 
 rootProject.buildFileName = "buildSrc.gradle"
 
+apply from: "../gradle/buildCache.gradle"
